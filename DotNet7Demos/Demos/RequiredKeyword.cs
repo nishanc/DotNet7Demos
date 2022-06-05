@@ -2,6 +2,7 @@ namespace DotNet7Demos.Demos
 {
     public class RequiredKeyword
     {
+        // Read more - https://github.com/dotnet/csharplang/blob/main/proposals/required-members.md#detailed-design
         public RequiredKeyword(string firstName)
         {
             this.FirstName = firstName;

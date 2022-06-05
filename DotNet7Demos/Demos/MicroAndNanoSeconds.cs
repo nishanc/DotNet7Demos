@@ -2,6 +2,7 @@ namespace DotNet7Demos.Demos
 {
     public static class MicroAndNanoSeconds
     {
+        // Read more - https://github.com/dotnet/runtime/issues/23799
         public static void Demo()
         {
             var dateTime = DateTime.Now;

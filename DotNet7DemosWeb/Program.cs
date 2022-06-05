@@ -29,6 +29,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// Rate limiting middleware - https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-7-preview-4/#rate-limiting-middleware
 app.UseRateLimiter(new RateLimiterOptions{
     Limiter = PartitionedRateLimiter.Create<HttpContext, string>(context => 
     {
